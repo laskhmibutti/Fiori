@@ -1,0 +1,57 @@
+<mvc:View controllerName="Assignments.controller.ViewAssignMent1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>AssignTitle_1}" titleAlignment="Center" showNavButton="true">
+        <content>
+            <HBox id="hbox_1" alignItems="Center" justifyContent="Center" class="sapUiLargeMarginTop">
+                <!-- Input Box -->
+                <VBox id="vbox_1" class="sapuiSmallMarginTop , sapUiSmallMarginBegin">
+                    <Label id="label_1" text="InputField" />
+                    <Input id="input_1" />
+                </VBox>
+
+                <!-- Text Field -->
+                <VBox id="vbox_2" class="sapuiSmallMarginTop , sapUiSmallMarginBegin">
+                    <Label id="label_2" text="Text Field" labelFor="TextArea" />
+                    <TextArea id="TextArea_1" placeholder="Enter text" maxlength="20" rows="1" ariaLabelledBy="TextAreaLabel" />
+                </VBox>
+
+                <!-- Date Picker -->
+                <VBox id="vbox_3" class=" sapUiSmallMarginBegin">
+                    <Label id="label_3" text="Date Picker" labelFor="TextArea" />
+                    <DatePicker id="DP1" placeholder="MMM d y" change="handleChange" />
+                </VBox>
+            </HBox>
+
+            <HBox id="hbox_2" alignItems="Center" justifyContent="Center" class="sapUiLargeMarginTop">
+                <!-- Drop Down Box -->
+                <VBox id="vbox_4" class=" sapUiSmallMarginLeft">
+                    <!-- SelectedItems -->
+                    <!-- option -->
+                    <Label id="_IDGenLabel1" text="DropDown" />
+                    <Select id="_IDGenSelect1" forceSelection="false" items="{
+						path: 'SelectedItems>/',
+						sorter: { path: 'option' }
+					}">
+                        <core:Item id="_IDGenItem1" text="{option}" />
+                    </Select>
+                </VBox>
+                <!-- Combo Box  -->
+                <VBox id="_IDGenVBox2" class="sapUiLargeMarginBegin">
+                    <Label id="_IDGenLabel2" text="ComboBox" />
+                    <ComboBox id="_IDGenComboBox1" items="{
+					path: 'SelectedItems>/',
+					sorter: { path: 'option' }
+				}">
+                        <core:Item id="_IDGenItem2" text="{option}" />
+                    </ComboBox>
+                </VBox>
+                <!-- Save Button -->
+                <VBox id="_IDGenVBox1" class="sapUiLargeMarginBegin">
+                    <Label id="_IDGenLabel3" text="Button" />
+                    <Button id="_IDGenButton1" text="Save" click="handleClick" design="Emphasized" class="sapuiSmallMarginTop" />
+                </VBox>
+            </HBox>
+
+            <Button id="mainWorkNav" text="Mainwork" press="mainWorkNav"/>
+        </content>
+    </Page>
+</mvc:View>
