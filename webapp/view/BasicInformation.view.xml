@@ -2,6 +2,7 @@
     <Page id="page" title="{i18n>AssignTitle_1}" titleAlignment="Center" showNavButton="true">
         <content>
             <Text id="_IDGenText1" text="Basic information"/>
+               <Text id="_IDGenText2" text="Basic information"/>
         </content>
     </Page>
 </mvc:View>
