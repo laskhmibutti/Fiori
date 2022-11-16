@@ -3,6 +3,7 @@
         <content>
             <Text id="_IDGenText1" text="Basic information"/>
                <Text id="_IDGenText2" text="Basic information"/>
+               <Text id="_IDGenText3" text="Basic information"/>
         </content>
     </Page>
 </mvc:View>
